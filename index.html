@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pick my movie</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="page-title">Pick my movie</h1>
+        <div class="auth-buttons">
+            <button id="loginButton" class="auth-button">🔑 Login</button>
+            <button id="signInButton" class="auth-button">📝 Sign In</button>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <button id="searchBtn" class="search-button">🔍</button>
+        <select id="languageFilter">
+            <option value="">All Languages</option>
+            <option value="English">English</option>
+            <option value="Kannada">Kannada</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Malayalam">Malayalam</option>
+        </select>
+    </div>
+
+    <div id="cardContainer" class="card-container"></div>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login or Sign In</h2>
+            <form id="authForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="enter-button">Enter</button>
+            </form>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2024 Movie Recommendations. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

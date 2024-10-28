@@ -1,0 +1,185 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    margin-right: 10px;
+}
+
+#searchInput {
+    padding: 10px;
+    border-radius: 40px;
+    border: 2px solid #d5acec;
+    width: 3000px;
+}
+
+.search-button {
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#languageFilter {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c0eeef;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(20% - 20px);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 1.2em;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.delete-btn, .comment-btn, .thumbs-up-btn {
+    margin: 5px;
+}
+
+.add-comment {
+    display: none; 
+    flex-direction: column;
+}
+
+.add-comment input {
+    margin-bottom: 5px;
+}
+
+.comments {
+    margin-top: 10px;
+    background: #f9f9f9;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.enter-button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enter-button:hover {
+    background-color: #0056b3;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1a1a2e, #16213e, #0f3460, #e94560, #ffba08);
+    background-size: cover;
+    color: white;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.comments p {
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 5px
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none; 
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline; 
+}
